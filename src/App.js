@@ -5,7 +5,7 @@ import Coindetails from './Compoments/Coindetails';
 import Coins from './Compoments/Coins';
 import Home from './OtherPages/Home/Home';
 import Navbar from './Compoments/Navbar';
-import Footer from './OtherPages/Footer';
+import Footer from './OtherPages/Footer/Footer';
 import About from './OtherPages/About/About';
 import Contact from './OtherPages/Contact/Contact';
 import Service from './OtherPages/Service/Service';
