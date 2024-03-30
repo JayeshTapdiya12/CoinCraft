@@ -6,71 +6,53 @@ import './service.css'
 const Service = () => {
     return (
         <>
-            <div className='service'>
-                {/* service */}
 
-                <div class="row">
-                    <div class="col-md-4 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src={image1} alt="" />
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Currency Wallet
-                                </h5>
-                                <p>
-                                    fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                    The
-                                    point of using
-                                </p>
 
-                            </div>
-                        </div>
+
+            <section id="about" className="aboutSec">
+                <div className="about">
+                    <div className="details">
+                        <h2 className="heading1">Currency Wallet</h2>
+                        <p className="para">At CoinCraft, we offer a secure and convenient currency wallet service to help you manage your digital assets with ease. Our currency wallet provides a safe and reliable solution for storing, sending, and receiving cryptocurrencies, allowing you to take full control of your finances in the fast-paced world of digital currencies.
+                        </p>
                     </div>
-                    <div class="col-md-4 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src={image2} alt="" />
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Security Storage
-                                </h5>
-                                <p>
-                                    fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                    The
-                                    point of using
-                                </p>
-
-                            </div>
-                        </div>
+                    <div className="composition">
+                        <img className="images" src={image1} alt="about" />
                     </div>
-                    <div class="col-md-4 ">
-                        <div class="box ">
-                            <div class="img-box">
-                                <img src={image3} alt="" />
-                            </div>
-                            <div class="detail-box">
-                                <h5>
-                                    Expert Support
-                                </h5>
-                                <p>
-                                    fact that a reader will be distracted by the readable content of a page when looking at its layout.
-                                    The
-                                    point of using
-                                </p>
 
-                            </div>
-                        </div>
-                    </div>
                 </div>
-                <div class="btn-box">
-                    {/* <a href="">
-                        View All
-                    </a> */}
+                <br />
+                <hr />
+                <br />
+                <div className="about">
+                    <div className="details">
+                        <h2 className="heading1">Security Storage</h2>
+                        <p className="para">At CoinCraft,we understand the importance of keeping your digital assets safe and secure. That's why we offer a state-of-the-art security storage service designed to protect your cryptocurrencies from unauthorized access and cyber threats. With our secure storage solutions, you can have peace of mind knowing that your funds are safeguarded by the highest standards of security and encryption.
+                        </p>
+                    </div>
+                    <div className="composition">
+                        <img className="images" src={image2} alt="about" />
+                    </div>
+
                 </div>
-            </div>
+                <br />
+                <hr />
+                <br />
+                <div className="about">
+                    <div className="details">
+                        <h2 className="heading1"> Expert Support</h2>
+                        <p className="para">At CoinCraft,we understand that navigating the world of cryptocurrencies can sometimes be challenging. That's why we offer expert support services to help you with any questions, concerns, or issues you may encounter along the way. Our team of experienced professionals is dedicated to providing you with personalized support and guidance, so you can make informed decisions and maximize your success in the cryptocurrency market.
+                        </p>
+                    </div>
+                    <div className="composition">
+                        <img className="images" src={image3} alt="about" />
+                    </div>
+
+                </div>
+            </section>
+
+
+
 
         </>
 

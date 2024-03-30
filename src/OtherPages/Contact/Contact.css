@@ -8,19 +8,18 @@
   box-sizing: border-box;
 }
 
-body {
-  /* background: #3952a3; */
-  background: #ad5389; /* fallback for old browsers */
+.conact {
+  background: #536976; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #3c1053,
-    #ad5389
+    #292e49,
+    #536976
   ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3c1053, #ad5389);
-  color: #485e74;
-  line-height: 1.6;
-  font-family: "Yantramanav", sans-serif;
-  padding: 1em;
+  background: linear-gradient(
+    to right,
+    #292e49,
+    #536976
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 .container {

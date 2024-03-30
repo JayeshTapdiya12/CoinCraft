@@ -1,34 +1,39 @@
 import React from 'react'
 import image from './top_img.png'
 import "./Home.css"
-import Service from '../Service/Service'
+
 
 const Home = () => {
     return (
         <>
             {/* Home */}
             {/* TOP section */}
-            <div className="home">
-                <div className='top_section'>
-                    <div class="bluid">
-                        <h1>Progress<br /> Your Bitcoin Money Success</h1>
-                        <p>There are many variations of passages of Lorem Ipsum available,
-                            but the majority have suffered
-                        </p>
 
+            <section id="about" className="aboutSec">
+
+                <div className="about">
+
+                    <div className="details">
+                        <h3 className="heading">
+                            {" "}
+                            <i>EMPOWER YOUR FUTURE </i>
+                        </h3>
+                        <h2 className="heading1">CoinCraft AWAITS YOU!</h2>
+                        <p className="para">CoinCraft is your gateway to the world of cryptocurrencies and blockchain technology. Whether you're a seasoned trader, a curious investor, or a newcomer exploring the possibilities of digital currencies, we're here to empower you with the knowledge, tools, and resources you need to succeed.</p>
+                        <br />
+                        <hr />
                     </div>
-                    <figure><img class="img_responsive" src={image}
-                        alt="#" /></figure>
 
-                    {/* <div class="bit"> */}
+                    <div className="composition">
+                        <img className="images" src={image} alt="about" />
+                    </div>
 
-                    {/* </div> */}
-                    {/* TOP Section End */}
+
+
                 </div>
-                <hr />
-                <Service />
 
-            </div>
+
+            </section>
         </>
     )
 }

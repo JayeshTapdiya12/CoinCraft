@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import './App.css';
+// import './App.css';
 import Exchanges from './Compoments/Exchanges';
 import Coindetails from './Compoments/Coindetails';
 import Coins from './Compoments/Coins';
@@ -16,6 +16,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (<>
+    {/* <div className='container'> */}
     <Navbar />
     <Routes>
       <Route path='/' element={<Home />} />
@@ -30,6 +31,7 @@ function App() {
 
     </Routes>
     <Footer />
+    {/* </div> */}
   </>
   );
 }

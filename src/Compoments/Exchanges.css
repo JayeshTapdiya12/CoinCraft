@@ -37,12 +37,17 @@
 .btns {
   margin-left: 12rem;
 }
-.exchanges {
-  background: #ad5389; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #3c1053,
-    #ad5389
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #3c1053, #ad5389);
+.hello {
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+
+  /* background-color: #2c5364; */
+}
+.hello1 {
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+
+  /* background-color: #2c5364; */
 }

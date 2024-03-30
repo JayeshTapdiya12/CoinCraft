@@ -29,27 +29,40 @@ const Exchanges = () => {
                         <div >
                             {
                                 exchanges.map((item, i) => {
-                                    return (
-                                        <div key={i} className="ex-cards">
-                                            <div className="image" style={{ marginTop: "10px", marginBottom: "10px" }}>
-                                                {/* <h1>icon</h1> */}
-                                                <img src={item.image
-                                                } height={"80px"} alt="CRYPTOCOIN IMAGE..." />
-                                            </div>
-                                            <div className="name">
-                                                <Link to={item.url} style={{ textDecoration: "none", color: 'gold' }}>{item.name
-                                                }   </Link>
-                                            </div>
-                                            <div className="price">
-                                                {item.trade_volume_24h_btc.toFixed(0)
-                                                }
-                                            </div>
-                                            <div className="rank" >
-                                                {item.trust_score_rank}
-                                            </div>
+                                    return (<>
+
+                                        <div className='table-responsive hello'>
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr >
+                                                        <th scope="col" >Logo</th>
+                                                        <th scope="col" >CryptoCurrency_Exchange_Name</th>
+
+                                                        <th scope="col" >Market_Cap_Change</th>
+                                                        <th scope="col" >Rank</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr className='hello'>
+
+                                                        <td className='hello1'>
+                                                            <img src={item.image} height={"80px"} alt="CRYPTOCOIN IMAGE..." />
+                                                        </td>
+                                                        <td className='hello1'>
+                                                            <Link to={item.url} style={{ textDecoration: "none", color: 'gold' }}>{item.name}   </Link>
+                                                        </td>
+                                                        <td className='hello1'>{item.trade_volume_24h_btc.toFixed(0)}</td>
+                                                        <td className='hello1'>{item.trust_score_rank}</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
 
                                         </div>
-                                    )
+
+
+
+                                    </>)
                                 })
                             }
                         </div> </>

@@ -2,17 +2,14 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-  /* background-color: rgb(6, 2, 37); */
-  background: #ad5389; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ad5389,
-    #3c1053
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ad5389, #3c1053);
+
   color: white;
   padding-bottom: 10px;
   width: 100;
+
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
 .navbar ul {
   display: flex;

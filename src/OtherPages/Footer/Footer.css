@@ -1,17 +1,12 @@
 .footer {
-  /* background-color: #333; */
-  background: #ad5389; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #ad5389,
-    #3c1053
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #ad5389, #3c1053);
-
   color: #fff; /* Text color */
   padding: 20px; /* Padding around content */
   text-align: center; /* Center align text */
   bottom: 0px;
   position: relative;
   width: 100%;
+
+  background: #0f2027;
+  background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 }
