@@ -33,9 +33,12 @@ const Coins = () => {
             {
                 loading ? <Loader /> : <>
 
+
+
                     <div className="btns">
-                        <button onClick={() => setCurrency('inr')}>INR</button>
                         <button onClick={() => setCurrency('usd')}>USD</button>
+                        <button onClick={() => setCurrency('inr')}>INR</button>
+
 
                     </div>
                     {/* 

@@ -10,6 +10,9 @@ const Service = () => {
 
 
             <section id="about" className="aboutSec">
+                <center>
+                    <h2 className="heading1">Services</h2>
+                </center>
                 <div className="about">
                     <div className="details">
                         <h2 className="heading1">Currency Wallet</h2>

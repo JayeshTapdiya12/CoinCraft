@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react'
 import Loader from './Loader'
 import { BaseUrl } from './BaseUrl'
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { Link, useParams } from 'react-router-dom'
 import './CoinDetail.css'
 import { BiSolidUpArrow, BiSolidDownArrow } from 'react-icons/bi'
 import { IoPulseOutline } from 'react-icons/io5'
@@ -32,6 +32,11 @@ const Coindetails = () => {
         }
         getCoin()
     }, [id])
+
+    const back = () => {
+
+    }
+
     return (
         <>
             {
@@ -40,8 +45,10 @@ const Coindetails = () => {
                     <div className="coin-detail">
                         <div className="coin-info">
                             <div className="btn">
-                                <button onClick={() => setCurrency('inr')}>INR</button>
+                                <Link to={"/coins"}><button>Back</button></Link>
                                 <button onClick={() => setCurrency('usd')}>USD</button>
+                                <button onClick={() => setCurrency('inr')}>INR</button>
+
                             </div>
                             <div className="time">
                                 {coin.last_updated}
