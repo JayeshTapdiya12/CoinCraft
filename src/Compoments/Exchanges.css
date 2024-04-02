@@ -38,16 +38,16 @@
   margin-left: 12rem;
 }
 .hello {
-  background: #0f2027;
+  /* background: #0f2027;
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
 
   /* background-color: #2c5364; */
 }
-.hello1 {
+/* .hello1 {
   background: #0f2027;
   background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
-  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027); */
 
-  /* background-color: #2c5364; */
-}
+/* background-color: #2c5364; */
+/* } */

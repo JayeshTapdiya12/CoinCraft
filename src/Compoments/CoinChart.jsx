@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import { BaseUrl } from './BaseUrl'
 import { useParams } from 'react-router-dom'
+import './coinchart.css'
 import {
     Chart as ChartJS,
     CategoryScale,
@@ -61,16 +62,12 @@ const CoinChart = ({ currency }) => {
         ]
 
     }
-
-
-
-
     return (
         <>
             {
                 chartData.length === 0 ? (<Loader />) : (
 
-                    <div>
+                    <div className='chart'>
                         {/* <Line data={myData} />  */}
                         <Line data={myData} options={{
                             elements: {

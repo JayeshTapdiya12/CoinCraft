@@ -1,7 +1,18 @@
 .coin-detail {
   padding-left: 120px;
   padding-top: 50px;
-  color: beige;
+  color: rgb(0, 157, 255);
+  background: #2bc0e4; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #eaecc6,
+    #2bc0e4
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #eaecc6,
+    #2bc0e4
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 .time {
   font-weight: bold;
