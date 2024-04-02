@@ -6,9 +6,6 @@ import './service.css'
 const Service = () => {
     return (
         <>
-
-
-
             <section id="about" className="aboutSec">
                 <center>
                     <h2 className="heading1">Services</h2>
@@ -53,10 +50,6 @@ const Service = () => {
 
                 </div>
             </section>
-
-
-
-
         </>
 
     )
