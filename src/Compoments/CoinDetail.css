@@ -14,6 +14,11 @@
     #2bc0e4
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
+
+.btncoins {
+  margin-top: -25px;
+}
+
 .time {
   font-weight: bold;
 }
@@ -51,7 +56,7 @@
 .coin-desc {
   width: 20rem;
 }
-.btn button {
+.btncoins button {
   height: 2rem;
   background-color: orange;
   border: none;

@@ -11,6 +11,9 @@ const Exchanges = () => {
     const [loading, setLoading] = useState(true);
     const [exchanges, setExchanges] = useState([])
 
+    const [search, setSearch] = useState('')
+
+
     useEffect(() => {
         const getExhangesData = async () => {
             const { data } = await axios.get(`${BaseUrl}/exchanges`);
@@ -27,12 +30,26 @@ const Exchanges = () => {
                 {
                     loading ? <Loader /> : <>
                         <div >
-                            {
-                                exchanges.map((item, i) => {
-                                    return (<>
+                            <div className="search-bar">
+                                <input type="text"
+                                    placeholder='Search Your Coins '
+                                    onChange={(e) => setSearch(e.target.value)}
+                                    style={{ marginLeft: "40vw", backgroundColor: "black", color: "white", width: "15vw" }}
 
-                                        <div className='table-responsive hello'>
-                                            <table class="table table-hover">
+                                />
+                            </div>
+                            {
+                                exchanges.filter((data) => {
+                                    if (data == '') {
+                                        return data
+                                    } else if (data.name.toLowerCase().includes(search.toLowerCase())) {
+                                        return data
+                                    }
+                                }).map((item, i) => {
+                                    return (<>
+                                        <div class="table-responsive" key={i}>
+                                            <table class="table table-hover table-primary">
+
                                                 <thead>
                                                     <tr >
                                                         <th scope="col" >Logo</th>
@@ -43,13 +60,13 @@ const Exchanges = () => {
                                                     </tr>
                                                 </thead>
                                                 <tbody>
-                                                    <tr className='hello'>
+                                                    <tr className='hello table-success'>
 
                                                         <td className='hello1'>
                                                             <img src={item.image} height={"80px"} alt="CRYPTOCOIN IMAGE..." />
                                                         </td>
                                                         <td className='hello1'>
-                                                            <Link to={item.url} style={{ textDecoration: "none", color: 'gold' }}>{item.name}   </Link>
+                                                            <Link to={item.url} style={{ textDecoration: "none", color: 'green', fontWeight: "700" }}>{item.name}   </Link>
                                                         </td>
                                                         <td className='hello1'>{item.trade_volume_24h_btc.toFixed(0)}</td>
                                                         <td className='hello1'>{item.trust_score_rank}</td>

@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { FcCurrencyExchange } from "react-icons/fc";
 import "./Header.css";
+import AuthModal from './Authentication/AuthModal';
 
 
 function BasicExample() {
@@ -37,6 +38,7 @@ function BasicExample() {
                             {/* <NavDropdown.Divider /> */}
 
                         </NavDropdown>
+                        <AuthModal />
                     </Nav>
                 </Navbar.Collapse>
             </Container>

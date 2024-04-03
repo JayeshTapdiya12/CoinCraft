@@ -44,7 +44,7 @@ const Coindetails = () => {
 
                     <div className="coin-detail">
                         <div className="coin-info">
-                            <div className="btn">
+                            <div className="btncoins">
                                 <Link to={"/coins"}><button>Back</button></Link>
                                 <button onClick={() => setCurrency('usd')}>USD</button>
                                 <button onClick={() => setCurrency('inr')}>INR</button>
