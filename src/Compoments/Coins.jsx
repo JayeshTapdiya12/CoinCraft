@@ -107,7 +107,7 @@ const CoinCard = ({ coindata, i, currencySymbol, id }) => {
             </div>
 
 
-        </Link >
+        </Link>
     )
 }
 

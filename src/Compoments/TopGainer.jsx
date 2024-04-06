@@ -1,5 +1,5 @@
 import { React, useState, useEffect } from 'react'
-import "./toplosser.css"
+import "./topgainer.css"
 import axios from "axios"
 import { styled } from '@mui/material/styles';
 import Table from '@mui/material/Table';
@@ -10,7 +10,8 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 
-const TopLoser = () => {
+
+const TopGainer = () => {
     const [data, setData] = useState([]);
     // const [error, setError] = useState([]);
 
@@ -18,7 +19,7 @@ const TopLoser = () => {
         const getData = async () => {
             const options = {
                 method: 'GET',
-                url: 'https://tokeninsight-crypto-api1.p.rapidapi.com/api/v1/coins/top-losers',
+                url: 'https://tokeninsight-crypto-api1.p.rapidapi.com/api/v1/coins/top-gainers',
                 params: { range: '100' },
                 headers: {
                     TI_API_KEY: 'c5da867677f042a99e660ad055c7c751',
@@ -91,8 +92,8 @@ const TopLoser = () => {
     const rows = data.map((item, index) => createData(item.name
         , item.price, item.price_change_24h, item.symbol, item.logo
     ));
-    const profit = data.price_change_24h > 0;
 
+    const profit = data.price_change_24h > 0;
 
     return (
         <>
@@ -110,21 +111,25 @@ const TopLoser = () => {
                                         <StyledTableCell align="right">Crypto Symbol</StyledTableCell>
                                         <StyledTableCell align="right">Crypto Logo</StyledTableCell>
                                         <StyledTableCell align="right">Price</StyledTableCell>
+
                                         <StyledTableCell align="right">Rise 24hr</StyledTableCell>
+
 
                                         {/* <StyledTableCell align="right">Volume 24hr</StyledTableCell> */}
                                     </TableRow>
                                 </TableHead>
                                 <TableBody>
                                     {rows.map((row) => (
+
                                         <StyledTableRow key={row.name}>
                                             <StyledTableCell component="th" scope="row">
                                                 {row.name}
                                             </StyledTableCell>
                                             <StyledTableCell align="right">{row.symbol}</StyledTableCell>
                                             <StyledTableCell align="right"><img src={row.logo} alt={row.logo} width={"15px"} height={"15px"} /></StyledTableCell>
-                                            <StyledTableCell align="right" >{row.price.toFixed(3)}</StyledTableCell>
+                                            <StyledTableCell align="right">{row.price.toFixed(3)}</StyledTableCell>
                                             <StyledTableCell align="right" style={profit ? { color: 'green' } : { color: 'red' }}>{profit ? "+ " + row.price_change_24h.toFixed(3) : row.price_change_24h.toFixed(3)} </StyledTableCell>
+
 
                                         </StyledTableRow>
                                     ))}
@@ -141,4 +146,4 @@ const TopLoser = () => {
     )
 }
 
-export default TopLoser
+export default TopGainer

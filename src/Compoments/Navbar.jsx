@@ -24,7 +24,9 @@ function BasicExample() {
                         <Nav.Link style={{ color: "white", fontWeight: "500" }} href='/about'>About</Nav.Link>
                         <Nav.Link style={{ color: "white", fontWeight: "500" }} href='/contact'>Contact</Nav.Link>
                         <Nav.Link style={{ color: "white", fontWeight: "500" }} href='/service'>Service</Nav.Link>
+                        <Nav.Link style={{ color: "white", fontWeight: "500" }} href='/news'>News</Nav.Link>
                         <Nav.Link style={{ color: "white", fontWeight: "500" }} href='/team'>Team</Nav.Link>
+
                         {/* <Nav.Link to='/exchange'>Exchanges Coins</Nav.Link>
                         <Nav.Link to='/coins'>Coins</Nav.Link> */}
 
@@ -36,6 +38,10 @@ function BasicExample() {
                             <NavDropdown.Divider />
                             <NavDropdown.Item href="/exchange">Exchanges Coins</NavDropdown.Item>
                             {/* <NavDropdown.Divider /> */}
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="/topgain">Top Gainer</NavDropdown.Item>
+                            <NavDropdown.Divider />
+                            <NavDropdown.Item href="/toploss">Top Losser</NavDropdown.Item>
 
                         </NavDropdown>
                         <AuthModal />
