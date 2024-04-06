@@ -98,8 +98,11 @@ const TopGainer = () => {
     return (
         <>
             <section id="about" className="aboutSec">
-
+                <center>
+                    <h2 className="heading1">Top Gainers</h2>
+                </center>
                 <div className="about">
+
 
                     <div className="details">
 

@@ -56,7 +56,7 @@ const TopLoser = () => {
 
     const StyledTableRow = styled(TableRow)(({ theme }) => ({
         '&:nth-of-type(odd)': {
-            backgroundColor: theme.palette.action.hover,
+            backgroundColor: theme.palette.common.blue,
         },
         // hide last border
         '&:last-child td, &:last-child th': {
@@ -97,7 +97,9 @@ const TopLoser = () => {
     return (
         <>
             <section id="about" className="aboutSec">
-
+                <center>
+                    <h2 className="heading1">Top Losser</h2>
+                </center>
                 <div className="about">
 
                     <div className="details">
