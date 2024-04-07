@@ -40,8 +40,8 @@ const CoinChart = ({ currency }) => {
     }
 
     useEffect(() => {
-        CoinChartData()
-    }, [])
+        CoinChartData();
+    }, [currency, id, days])
 
     const myData = {
         labels: chartData.map((value) => {
