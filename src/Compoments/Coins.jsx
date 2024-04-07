@@ -53,9 +53,11 @@ const Coins = () => {
                     {
                         coins.filter((data) => {
                             if (data === '') {
-                                return data
+                                return data;
                             } else if (data.name.toLowerCase().includes(search.toLowerCase())) {
-                                return data
+                                return data;
+                            } else {
+                                return null;
                             }
                         }).map((coindata, i) => {
                             return (

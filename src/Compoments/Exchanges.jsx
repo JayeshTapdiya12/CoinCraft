@@ -44,6 +44,8 @@ const Exchanges = () => {
                                         return data
                                     } else if (data.name.toLowerCase().includes(search.toLowerCase())) {
                                         return data
+                                    } else {
+                                        return null;
                                     }
                                 }).map((item, i) => {
                                     return (<>
