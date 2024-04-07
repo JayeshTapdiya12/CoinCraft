@@ -35,7 +35,6 @@ const News = () => {
                 console.log(error)
             }
         };
-
         getData();
     }, []);
 

@@ -77,7 +77,7 @@ const CoinChart = ({ currency }) => {
                             }
                         }} style={{ marginTop: "5rem", width: "60rem" }} />
 
-                        <div className='btn' style={{ marginTop: "30px" }}>
+                        <div className='btncoins' style={{ marginTop: "30px" }}>
                             <button onClick={() => setDays(1)} >24 hours</button>
                             <button onClick={() => setDays(30)}>1 Month</button>
                             <button onClick={() => setDays(365)}>1 Year</button>

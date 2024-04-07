@@ -13,7 +13,7 @@ const Coins = () => {
     const [loading, setLoading] = useState(true);
     const [coins, setCoins] = useState([])
     const [currency, setCurrency] = useState('usd')
-    const currencySymbol = currency == 'inr' ? '₹' : '$';
+    const currencySymbol = currency === 'inr' ? '₹' : '$';
     const [search, setSearch] = useState('')
 
 
@@ -21,7 +21,7 @@ const Coins = () => {
     useEffect(() => {
         const getCoinsData = async () => {
             const { data } = await axios.get(`${BaseUrl}/coins/markets?vs_currency=${currency}`);
-            console.log(data)
+            // console.log(data)
             setCoins(data)
             setLoading(false)
         }
@@ -51,8 +51,8 @@ const Coins = () => {
                     </div>
 
                     {
-                        coins.filter((data) => {
-                            if (data == '') {
+                        coins.filter((data, i) => {
+                            if (data === '') {
                                 return data
                             } else if (data.name.toLowerCase().includes(search.toLowerCase())) {
                                 return data
@@ -82,7 +82,7 @@ const CoinCard = ({ coindata, i, currencySymbol, id }) => {
         <Link to={`/coins/${id}`} style={{ textDecoration: "none" }}>
 
             <div className='table-responsive'>
-                <table class="table table-hover table-primary">
+                <table className="table table-hover table-primary">
                     <thead>
                         <tr>
                             <th>Rank</th>
