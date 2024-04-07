@@ -1,4 +1,4 @@
-import React, { useSyncExternalStore } from 'react'
+import React from 'react'
 import { useEffect, useState } from 'react'
 import Loader from './Loader'
 import { BaseUrl } from './BaseUrl'
@@ -12,7 +12,7 @@ import CoinChart from './CoinChart'
 
 const Coindetails = () => {
     const [currency, setCurrency] = useState("inr")
-    const currencySymbol = currency == 'inr' ? '₹' : '$';
+    const currencySymbol = currency === 'inr' ? '₹' : '$';
 
     const [coin, setCoin] = useState([])
     const [loading, setLoading] = useState(true)
@@ -33,9 +33,7 @@ const Coindetails = () => {
         getCoin()
     }, [id])
 
-    const back = () => {
 
-    }
 
     return (
         <>
@@ -53,7 +51,7 @@ const Coindetails = () => {
                             <div className="time">
                                 {coin.last_updated}
                             </div>
-                            <div className="coin-image">
+                            <div className="coin_image">
                                 <img src={coin.image.large} height={"150px"} alt="The Image Of Coin" />
                             </div>
                             <div className="coin-name">

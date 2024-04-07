@@ -6,7 +6,7 @@ import Fade from '@mui/material/Fade';
 import Button from '@mui/material/Button';
 // import Typography from '@mui/material/Typography';
 import { AppBar } from '@mui/material';
-import { Tab, TabPanel, Tabs, TabsList } from '@mui/base';
+import { Tab, Tabs, TabsList } from '@mui/base';
 
 
 const style = {
