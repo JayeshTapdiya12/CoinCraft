@@ -63,7 +63,7 @@ const Exchanges = () => {
                                                     <tr className='hello table-success'>
 
                                                         <td className='hello1'>
-                                                            <img src={item.image} height={"80px"} alt="CRYPTOCOIN IMAGE..." />
+                                                            <img src={item.image} height={"80px"} alt="CRYPTOCOIN.." />
                                                         </td>
                                                         <td className='hello1'>
                                                             <Link to={item.url} style={{ textDecoration: "none", color: 'green', fontWeight: "700" }}>{item.name}   </Link>

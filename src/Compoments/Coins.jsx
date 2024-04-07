@@ -51,7 +51,7 @@ const Coins = () => {
                     </div>
 
                     {
-                        coins.filter((data, i) => {
+                        coins.filter((data) => {
                             if (data === '') {
                                 return data
                             } else if (data.name.toLowerCase().includes(search.toLowerCase())) {
@@ -95,10 +95,10 @@ const CoinCard = ({ coindata, i, currencySymbol, id }) => {
                     <tbody>
                         <tr className="table-success" style={{ fontWeight: "700" }}>
                             <td>{coindata.market_cap_rank}</td>
-                            <td><img src={coindata.image} height={"80px"} alt="CRYPTOCOIN IMAGE..." /></td>
+                            <td><img src={coindata.image} height={"80px"} alt="CRYPTOCOIN" /></td>
                             <td >{coindata.name}</td>
                             <td>{currencySymbol} {coindata.current_price.toFixed(3)}</td>
-                            <td style={profit ? { color: 'green' } : { color: 'red' }}>{profit ? "+ " + coindata.market_cap_change_percentage_24h.toFixed(2) : coindata.market_cap_change_percentage_24h}</td>
+                            <td style={profit ? { color: 'green' } : { color: 'red' }}>{profit ? "+" + coindata.market_cap_change_percentage_24h.toFixed(2) : coindata.market_cap_change_percentage_24h}</td>
                         </tr>
                     </tbody>
                 </table>

@@ -52,7 +52,7 @@ const Coindetails = () => {
                                 {coin.last_updated}
                             </div>
                             <div className="coin_image">
-                                <img src={coin.image.large} height={"150px"} alt="The Image Of Coin" />
+                                <img src={coin.image.large} height={"150px"} alt="Coin" />
                             </div>
                             <div className="coin-name">
                                 {coin.symbol}
