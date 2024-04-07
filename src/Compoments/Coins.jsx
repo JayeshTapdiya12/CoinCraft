@@ -26,7 +26,7 @@ const Coins = () => {
             setLoading(false)
         }
         getCoinsData();
-    }, [])
+    }, [currency])
 
 
 
