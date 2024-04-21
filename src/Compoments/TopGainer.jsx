@@ -135,8 +135,8 @@ const TopGainer = () => {
                                             </StyledTableCell>
                                             <StyledTableCell align="right">{row.symbol}</StyledTableCell>
                                             <StyledTableCell align="right"><img src={row.logo} alt={row.logo} width={"15px"} height={"15px"} /></StyledTableCell>
-                                            <StyledTableCell align="right">{row.price.toFixed(3)}</StyledTableCell>
-                                            <StyledTableCell align="right" style={profit ? { color: 'green' } : { color: 'red' }}>{profit ? "+" + row.price_change_24h.toFixed(3) : row.price_change_24h.toFixed(3)} </StyledTableCell>
+                                            <StyledTableCell align="right">$ {row.price.toFixed(3)}</StyledTableCell>
+                                            <StyledTableCell align="right" style={profit ? { color: 'green' } : { color: 'red' }}>$ {profit ? "+" + row.price_change_24h.toFixed(3) : row.price_change_24h.toFixed(3)} </StyledTableCell>
 
 
                                         </StyledTableRow>

@@ -3,8 +3,6 @@ import "./Footer.css"
 import {
     MDBFooter,
     MDBContainer,
-    MDBIcon,
-    MDBInput,
     MDBCol,
     MDBRow,
     MDBBtn
@@ -40,9 +38,7 @@ const Footer = () => {
 
                     <section className='mb-4'>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum repellat quaerat
-                            voluptatibus placeat nam, commodi optio pariatur est quia magnam eum harum corrupti dicta, aliquam
-                            sequi voluptate quas.
+                            Welcome to CoinCraft, your premier destination for all things related to cryptocurrencies and blockchain technology. At CoinCraft, we're dedicated to providing you with accurate information, useful resources, and exceptional services to help you navigate the exciting world of digital currencies.
                         </p>
                     </section>
 
