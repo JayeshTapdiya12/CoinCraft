@@ -19,7 +19,7 @@ const Footer = () => {
                             <MDBRow className='d-flex justify-content-center'>
                                 <MDBCol size="auto">
                                     <p className='pt-2'>
-                                        <strong>Sign up for our newsletter</strong>
+                                        {/* <strong>Sign up for our newsletter</strong> */}
                                     </p>
                                 </MDBCol>
 
@@ -29,7 +29,7 @@ const Footer = () => {
 
                                 <MDBCol size="auto">
                                     <MDBBtn outline color='light' type='submit' className='mb-4'>
-                                        Subscribe
+                                        {/* Subscribe */}
                                     </MDBBtn>
                                 </MDBCol>
                             </MDBRow>
@@ -61,7 +61,7 @@ const Footer = () => {
                                 {/* <ul className='list-unstyled mb-0'> */}
                                 <h4>Contact Us</h4>
                                 <p>Email: jayesh121220@gmail.com</p>
-                                <p>Phone: +123-456-7890</p>
+                                <p>Phone: +91 78691-48854</p>
                                 <p>Address: Medi-Caps University, Indore, MP</p>
                                 {/* </ul> */}
                             </MDBCol>

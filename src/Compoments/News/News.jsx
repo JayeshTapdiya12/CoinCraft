@@ -19,17 +19,18 @@ const News = () => {
         const getData = async () => {
             const options = {
                 method: 'GET',
-                url: 'https://cryptocurrency-news2.p.rapidapi.com/v1/coindesk',
+                url: 'https://crypto-news16.p.rapidapi.com/news/all',
                 headers: {
-                    'X-RapidAPI-Key': '3a4fe67cbfmshec9d6ba380e52dbp183e80jsnbb33aa7fd41e',
-                    'X-RapidAPI-Host': 'cryptocurrency-news2.p.rapidapi.com'
+                    'X-RapidAPI-Key': '5f40966cbcmsha854b49d2299cf0p17e114jsnecb141f5e249',
+                    'X-RapidAPI-Host': 'crypto-news16.p.rapidapi.com'
                 }
             };
 
             try {
                 const response = await axios.request(options);
-                setData(response.data);
-                // console.log(response.data)
+                setData(response);
+
+                console.log(response)
             } catch (error) {
                 // setError(error);
                 console.log(error)
