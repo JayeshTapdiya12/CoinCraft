@@ -4,8 +4,7 @@ import {
     MDBFooter,
     MDBContainer,
     MDBCol,
-    MDBRow,
-    MDBBtn
+    MDBRow
 } from 'mdb-react-ui-kit';
 const Footer = () => {
     return (
@@ -14,27 +13,7 @@ const Footer = () => {
                 <MDBContainer className='p-4'>
 
 
-                    <section className=''>
-                        <form action=''>
-                            <MDBRow className='d-flex justify-content-center'>
-                                <MDBCol size="auto">
-                                    <p className='pt-2'>
-                                        {/* <strong>Sign up for our newsletter</strong> */}
-                                    </p>
-                                </MDBCol>
 
-                                {/* <MDBCol md='5' start>
-                                    <MDBInput contrast type='email' label='Email address' className='mb-4' />
-                                </MDBCol> */}
-
-                                <MDBCol size="auto">
-                                    <MDBBtn outline color='light' type='submit' className='mb-4'>
-                                        {/* Subscribe */}
-                                    </MDBBtn>
-                                </MDBCol>
-                            </MDBRow>
-                        </form>
-                    </section>
 
                     <section className='mb-4'>
                         <p>
