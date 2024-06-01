@@ -13,7 +13,7 @@ const Team = () => {
             id: 1,
             image: img2,
             name: "Jayesh Tapdiya",
-            pos: "Full-Stack Developer",
+            // pos: "Full-Stack Developer",
             linkdin: "https://www.linkedin.com/in/jayesh-tapdiya-01573024a/",
             gmail: "mailtto:jayesh121220@gmail.com",
             github: "https://github.com/jayeshtapdiya",
@@ -22,7 +22,7 @@ const Team = () => {
             id: 2,
             image: img,
             name: "Kanhaiya Soni",
-            pos: "Front-End Developer",
+            // pos: "Front-End Developer",
             linkdin: "https://www.linkedin.com/in/kanhaiya-soni-b78baa220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
             gmail: "mailto:Kanhaiyasoni0212@gmail.com",
             github: "https://github.com/kanhaiya-2001",
@@ -31,7 +31,7 @@ const Team = () => {
             id: 3,
             image: img1,
             name: "Hritik Bhargava",
-            pos: "Back-End Developer",
+            // pos: "Back-End Developer",
             linkdin: "https://www.linkedin.com/in/hritik-bhargava-55ba611b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
             gmail: "mailtto:jayesh121220@gmail.com",
             github: "https://github.com/hritikbhargava1256",
@@ -53,7 +53,7 @@ const Team = () => {
                                 </div>
                                 <div className={classes.caption}>
                                     <h3>{ele.name}</h3>
-                                    <p>{ele.pos}</p>
+                                    {/* <p>{ele.pos}</p> */}
                                     <div className={classes.social_links}>
                                         {/* linkdin */}
                                         <a href={ele.linkdin} target="_blank" rel="noopener noreferrer" className={classes.footer_a_link}>
