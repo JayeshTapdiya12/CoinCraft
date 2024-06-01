@@ -31,6 +31,8 @@ const Footer = () => {
                                     <li><a href="/coins" style={{ textDecoration: "none", color: "white" }}>Coins</a></li>
                                     <li><a href="/about" style={{ textDecoration: "none", color: "white" }}>About Us</a></li>
                                     <li><a href="/contact" style={{ textDecoration: "none", color: "white" }}>Contact Us</a></li>
+                                    <li><a href="/news" style={{ textDecoration: "none", color: "white" }}>News</a></li>
+
                                 </ul>
                             </MDBCol>
 
