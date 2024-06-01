@@ -11,6 +11,7 @@ const Home = () => {
                 <div className="about">
 
                     <div className="details">
+
                         <h3 className="heading">
                             {" "}
                             <i>EMPOWER YOUR FUTURE </i>
@@ -25,7 +26,9 @@ const Home = () => {
                         <img className="images" src={image} alt="about" />
                     </div>
                 </div>
+
             </section>
+
         </>
     )
 }

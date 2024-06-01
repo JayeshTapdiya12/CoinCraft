@@ -3,8 +3,8 @@
   padding: 3rem 1.5rem;
   backdrop-filter: blur(5px);
   /* background: #536976; 
-    background: -webkit - linear - gradient(to right, #292e49, #536976); 
-    background: linear - gradient(to right, #292e49, #536976); */
+  background: -webkit - linear - gradient(to right, #292e49, #536976); 
+  background: linear - gradient(to right, #292e49, #536976); */
 
   background: #2bc0e4; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -108,4 +108,63 @@
 }
 .btn {
   margin-bottom: 40px;
+}
+
+.news-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.news-page h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.article {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+  max-width: 100%;
+  border-radius: 8px;
+}
+
+.article h2 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: wheat;
+}
+
+.article h5 {
+  margin: 10px 0;
+  font-size: 1.5em;
+  color: rgb(241, 241, 241);
+}
+
+.article p {
+  font-size: 1.1em;
+  color: #efe7e7;
+}
+
+.article a {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+.article a:hover {
+  text-decoration: underline;
+  /* color: gray; */
 }
