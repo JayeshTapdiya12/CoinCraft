@@ -51,6 +51,7 @@ const Team = () => {
                                 <div className={classes.img}>
                                     <img src={ele.image} alt="Profile" />
                                 </div>
+                                <br />
                                 <div className={classes.caption}>
                                     <h3>{ele.name}</h3>
                                     {/* <p>{ele.pos}</p> */}
