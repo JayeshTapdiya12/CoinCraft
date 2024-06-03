@@ -64,7 +64,7 @@ const News = () => {
                                         <h2>Title: {ele.title} .</h2>
                                         <h5>Date : {ele.published}</h5>
                                         <h2>Category: {ele.category}</h2>
-                                        <p>{ele.summary.split('.')[0]} .</p>
+                                        <p>Description: {ele.summary.split('.')[0]} .</p>
                                         {/* <a href={article.url} target="_blank" rel="noopener noreferrer">Read More</a> */}
                                     </div>
 
