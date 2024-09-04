@@ -43,7 +43,7 @@ const Footer = () => {
                                 <h4>Contact Us</h4>
                                 <p>Email: jayesh121220@gmail.com</p>
 <p>Email: kanhaiyasoni0212@gmail.com</p>
-                                <p>Phone: +91 78691-48854</p>
+                                <p>Phone: +91 78691-48854, 96697-61446</p>
                                 <p>Address: Medi-Caps University, Indore, MP</p>
                                 {/* </ul> */}
                             </MDBCol>
