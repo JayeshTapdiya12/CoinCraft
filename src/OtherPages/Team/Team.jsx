@@ -17,24 +17,6 @@ const Team = () => {
             linkdin: "https://www.linkedin.com/in/jayesh-tapdiya-01573024a/",
             gmail: "mailtto:jayesh121220@gmail.com",
             github: "https://github.com/jayeshtapdiya",
-        },
-        {
-            id: 2,
-            image: img,
-            name: "Kanhaiya Soni",
-            // pos: "Front-End Developer",
-            linkdin: "https://www.linkedin.com/in/kanhaiya-soni-b78baa220?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app ",
-            gmail: "mailto:Kanhaiyasoni0212@gmail.com",
-            github: "https://github.com/kanhaiya-2001",
-        },
-        {
-            id: 3,
-            image: img1,
-            name: "Hritik Bhargava",
-            // pos: "Back-End Developer",
-            linkdin: "https://www.linkedin.com/in/hritik-bhargava-55ba611b7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            gmail: "mailtto:jayesh121220@gmail.com",
-            github: "https://github.com/hritikbhargava1256",
         }
     ]
 
